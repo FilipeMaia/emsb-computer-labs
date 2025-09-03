@@ -41,7 +41,7 @@ def plot_complex(a, type="polar", dx=1e-9):
         ax1.set_xlabel("Real space [nm]")
         ax2.plot(x_axis, numpy.angle(a))
         ax2.set_yticks([-numpy.pi, -numpy.pi/2, 0, numpy.pi/2, numpy.pi])
-        ax2.set_yticklabels([r"$-\pi$", r"$-\pi/2$", r"0", r"$\pi/2$", r"$\pi$"])
+        ax2.set_yticklabels([r'$-\pi$', r'$-\pi/2$', r"$0$", r'$\pi/2$', r'$\pi$'])
         ax2.set_title("Phase")
         ax2.set_xlabel("Real space [nm]")
     elif type == "realimag":
