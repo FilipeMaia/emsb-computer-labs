@@ -147,7 +147,7 @@ def imshow_complex(a, type="polar", log=False):
         im2 = ax2.imshow(numpy.angle(a), cmap="hsv", vmin=-numpy.pi, vmax=numpy.pi, origin="lower")
         fig.colorbar(im1, ax=ax1)
         cb2 = fig.colorbar(im2, ax=ax2, ticks=[-numpy.pi, -numpy.pi/2, 0, numpy.pi/2, numpy.pi])
-        cb2.ax.set_yticklabels([f'$-\pi$', f'$-\pi/2$', f'$0$', f'$\pi/2$', f'$\pi$'])
+        cb2.ax.set_yticklabels([r'$-\pi$', r'$-\pi/2$', r'$0$', r'$\pi/2$', r'$\pi$'])
         ax1.set_title("Abs")
         ax2.set_title("Phase")
     elif type == "realimag":
